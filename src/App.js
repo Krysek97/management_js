@@ -5,6 +5,7 @@ import '@szhsin/react-menu/dist/index.css';
 import '@szhsin/react-menu/dist/transitions/slide.css';
 import AddE from "./pages/employee/Add.js";
 import All from "./pages/employee/All.js";
+import Chart from './pages/chart/chart.js';
 
 
 function App() {
@@ -28,10 +29,10 @@ function App() {
          <Route path="*" element={<Error/>}/> */}
         <Route path="employee/add" element={<AddE/>}/>
         <Route path="employee/all" element={<All/>}/>
-        {/* <Route path="client/:id" element={<Client/>}/>
-         <Route path="client/:id/visits/add" element={<AddV/>}/> */}
-        {/* <Route path="login" element={<Login/>}/>
-         <Route path="register" element={<Registration/>}/> */}
+        <Route path="chart" element={<Chart/>}/>
+        {/* <Route path="client/:id/visits/add" element={<AddV/>}/>
+        <Route path="login" element={<Login/>}/>
+        <Route path="register" element={<Registration/>}/> */} 
       </Routes> }
       </BrowserRouter>
   );
