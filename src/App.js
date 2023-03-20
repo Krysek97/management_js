@@ -3,9 +3,11 @@ import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import { Menu, MenuItem, MenuButton } from '@szhsin/react-menu';
 import '@szhsin/react-menu/dist/index.css';
 import '@szhsin/react-menu/dist/transitions/slide.css';
-import AddE from "./pages/employee/Add.js";
+import AddE from "./pages/employee/AddE.js";
 import All from "./pages/employee/All.js";
-import Chart from './pages/chart/chart.js';
+import Chart from './pages/chart/Chart.js';
+import Error from './pages/Error.js';
+import Main from './pages/main/Main.js';
 
 
 function App() {
@@ -25,8 +27,8 @@ function App() {
     <a href="/register"><button>Zarejestruj</button></a>
     </div>
       { <Routes>
-        {/* <Route path="/" element={<Office/>}/>
-         <Route path="*" element={<Error/>}/> */}
+        <Route path="/" element={<Main/>}/>
+        <Route path="*" element={<Error/>}/> 
         <Route path="employee/add" element={<AddE/>}/>
         <Route path="employee/all" element={<All/>}/>
         <Route path="chart" element={<Chart/>}/>
