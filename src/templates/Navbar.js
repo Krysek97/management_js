@@ -1,6 +1,7 @@
 import React from 'react';
 import '@szhsin/react-menu/dist/index.css';
 import '@szhsin/react-menu/dist/transitions/slide.css';
+import AuthService from '../services/AuthService';
 
 
 function Navbar() {
@@ -34,6 +35,9 @@ function Navbar() {
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/">Eksport</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" onClick={AuthService.logout} href="/">Wyloguj</a>
         </li>
       </ul>
     </div>

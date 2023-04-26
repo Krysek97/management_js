@@ -23,7 +23,7 @@ function All(){
       <div className='employee-container'>
         {employees.map((employee)=>(
           <div className='card'>
-            <div>{employee.id}. {employee.name} {employee.lastname} <a href={'/employee/'+employee.id}><button>Przejdź do pracownika</button></a></div>
+            <div>{employee.id}. {employee.name} {employee.lastname} <a class="btn btn-primary"href={'/employee/'+employee.id}>Przejdź do pracownika</a></div>
             </div>
         ))}
       </div>

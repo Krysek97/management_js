@@ -1,9 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from '../../templates/Navbar';
 
-function Main(){
+function Home(){
   return (
     <div class="row">
+    <Navbar></Navbar>
   <div class="row mb-3">
   <div class="col-sm-6 mb-3 mb-sm-0">
     <div class="card">
@@ -48,4 +50,4 @@ function Main(){
   )
 }
 
-export default Main;
+export default Home;

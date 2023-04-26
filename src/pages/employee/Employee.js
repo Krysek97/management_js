@@ -25,7 +25,7 @@ function Employee(){
      <div>
      <h2>Profil pracownika</h2>
      <div>{employee.name} {employee.lastname}</div>
-     <a href={'/employee/'+id+'/shift/add'}><button>Dodaj grafik</button></a>
+     <a class = "btn btn-primary" href={'/employee/'+id+'/shift/add'}>Dodaj grafik</a>
      </div>
     );
   };

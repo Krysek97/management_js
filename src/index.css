@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#root{
+  background-image:url('https://i.redd.it/o8dlfk93azs31.jpg');
+  background-position:center;
+  height: 927px;
+  background-size:cover;
+}

@@ -3,14 +3,18 @@ import AddE from "../pages/employee/AddE.js";
 import All from "../pages/employee/All.js";
 import Chart from '../pages/chart/Chart.js';
 import Error from '../pages/Error.js';
-import Main from '../pages/main/Main.js';
 import Employee from '../pages/employee/Employee.js';
 import AddC from '../pages/chart/AddC.js';
+import Home from "../pages/main/Home.js";
+import Login from "../pages/main/Login.js";
+import Register from "../pages/main/Register.js";
 
 function Sites() {
     return (
      <Routes>
-          <Route path="/" element={<Main/>}/>
+          <Route path="/" element={<Login/>}/>
+          <Route path="/register" element={<Register/>}></Route>
+          <Route path="/home" element={<Home/>}/>
           <Route path="*" element={<Error/>}/>
           <Route path="employee/add" element={<AddE/>}/>
           <Route path="employee/all" element={<All/>}/>
