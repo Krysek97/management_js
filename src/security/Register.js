@@ -1,4 +1,4 @@
-import MainNavbar from "../../templates/MainNavbar";
+import MainNavbar from "../templates/MainNavbar";
 import { useState } from "react";
 import axios from "axios";
 
@@ -32,6 +32,24 @@ function Register(){
         setSubmitted(true);
         setError(false);
       }
+      const body = {
+        username: username,
+        password: password,
+      };
+      console.log(body);
+      let config = {
+        headers: {
+          'Content-Type': 'application/json;charset=UTF-8',
+          "Access-Control-Allow-Origin": "*",
+        }
+      };
+      axios.post("http://localhost:8080/user/add", body)
+        .then((response) => {
+          console.log(response.data);
+        })
+        .catch((error) => {
+          console.log(error);
+        })
     };
    
     // Showing success message
@@ -66,14 +84,14 @@ function Register(){
       };
       console.log(body);
 
-    axios.post("http://localhost:8080/api/authenticate", body)
-    .then((response) => {
-      console.log(response.data);
-      window.location.replace("/");
-    })
-    .catch((error) => {
-      console.log(error);
-    })
+    // axios.post("http://localhost:8080/api/authenticate", body)
+    // .then((response) => {
+    //   console.log(response.data);
+    //   window.location.replace("/");
+    // })
+    // .catch((error) => {
+    //   console.log(error);
+    // })
 
 
     return (

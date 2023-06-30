@@ -6,8 +6,8 @@ import Error from '../pages/Error.js';
 import Employee from '../pages/employee/Employee.js';
 import AddC from '../pages/chart/AddC.js';
 import Home from "../pages/main/Home.js";
-import Login from "../pages/main/Login.js";
-import Register from "../pages/main/Register.js";
+import Login from "../security/Login.js";
+import Register from "../security/Register.js";
 
 function Sites() {
     return (
